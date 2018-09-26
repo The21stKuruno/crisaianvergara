@@ -1,0 +1,14 @@
+{
+  "name": "crisaianvergara",
+  "version": "2.0.0",
+  "description": "my portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o public/css/ --recursive"
+  },
+  "author": "Cris Aian Vergara",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
