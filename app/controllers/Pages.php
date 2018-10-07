@@ -19,4 +19,12 @@ class Pages extends Controller {
 
     $this->view('pages/portfolio', $data);
   }
+
+  public function blog() {
+    $data = [
+      'title' => 'Blog'
+    ];
+
+    $this->view('pages/blog', $data);
+  }
 }

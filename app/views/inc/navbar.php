@@ -10,7 +10,7 @@
         <li><a href="<?php echo URLROOT; ?>">home</a></li>
         <li><a class="smooth-scroll" id="about-me" href="<?php echo URLROOT ;?>#about-me-section">about</a></li>
         <li><a class="portfolio" href="<?php echo URLROOT; ?>/pages/portfolio">portfolio</a></li>
-        <li><a href="trade.html">trade journal</a></li>
+        <li><a href="<?php echo URLROOT; ?>/pages/blog">blog</a></li>
         <li id="last-li"><a class="smooth-scroll" id="contact-me" href="<?php echo URLROOT ;?>#contact-me-section">contact</a></li>
       </ul>
       <ul class="social-links nav-item">

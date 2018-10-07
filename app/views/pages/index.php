@@ -16,6 +16,7 @@
       <h3>Some Of My Latest Work</h3>
     </span>
     <div class="projects">
+    <a href="#">
       <figure>
         <img src="http://placehold.it/250x250" />
         <h4>Trade-it</h4>
@@ -24,6 +25,8 @@
         <span>Flat Design</span>
         <span>Wordpress</span>
       </figure>
+    </a>
+    <a href="#">
       <figure>
         <img src="http://placehold.it/250x250" />
         <h4>The Sentinel</h4>
@@ -33,6 +36,8 @@
         <span>Wordpress</span>
         <span>Photography</span>
       </figure>
+    </a>
+    <a href="#">
       <figure>
         <img src="http://placehold.it/250x250" />
         <h4>A-market</h4>
@@ -42,9 +47,10 @@
         <span>Colorful</span>
         <span>ReactJs</span>
       </figure>
+    </a>
     </div>
     <p>Want to see more examples?
-      <a id="more-projects" href="portfolio.html">
+      <a id="more-projects" href="<?php echo URLROOT; ?>/pages/portfolio">
         Click here.
       </a>
     </p>
@@ -84,42 +90,42 @@
     <span class="line">
       <h3>Contact Me</h3>
     </span>
-    <form action="" method="POST">
+    <form action="<?php echo URLROOT; ?>/messages/send" method="POST">
       <h4>Feel free to shoot me an email (<a href="mailto:The21stKuruno@yahoo.com">The21stKuruno@yahoo.com</a>),
         connect on social media (<a href="https://twitter.com/The21stKuruno" target="_blank">Twitter</a>),
         or fill out the
         form below:</h4>
       <div class="form-item two-column">
         <div>
-          <label for="name">Full Name <sup>*</sup></label>
-          <input type="text" id="name" required>
+          <label for="name">Name <sup>*</sup></label>
+          <input type="text" id="name" name="name" required>
         </div>
         <div>
-          <label for="email">Email Address <sup>*</sup></label>
-          <input type="email" id="email" required>
+          <label for="email">Email <sup>*</sup></label>
+          <input type="email" id="email" name="email" required>
         </div>
       </div>
       <div class="form-item two-column">
         <div>
           <label for="website">Website</label>
-          <input type="url" id="website">
+          <input type="url" id="website" name="website">
         </div>
         <div>
-          <label for="number">Phone Number</label>
-          <input type="text" id="number">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" name="phone">
         </div>
       </div>
       <div class="form-item">
         <label for="message">Message <sup>*</sup></label>
-        <textarea name="" id="message" cols="30" rows="10" required></textarea>
+        <textarea name="" id="message" cols="30" rows="10" name="message" required></textarea>
       </div>
       <div class="form-item">
-        <button class="btn" type="submit">Submit Form</button>
+        <button class="btn" type="submit">Send Message</button>
       </div>
       <div class="form-item">
         <p class="required">* Required</p>
       </div>
     </form>
   </section>
-  <script src="<?php echo URLROOT; ?>/js/main.js"></script>
+  <script src="<?php echo URLROOT; ?>/js/pages.js"></script>
 <?php require APPROOT . '/views/inc/footer.php'; ?>
