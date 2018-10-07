@@ -176,6 +176,7 @@ section.main {
     min-height: 500px;
     padding-top: 30px;
     padding-bottom: 30px;
+    height: 100vh;
   }
   h1 {
     color: $white;
@@ -427,6 +428,12 @@ section.contact {
     font-size: 12px;
     text-align: center;
   }
+}
+
+// Portfolio
+section.portfolio {
+  height: 1200px;
+  padding: 70px 0;
 }
 
 // Footer

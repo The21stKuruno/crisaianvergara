@@ -6,17 +6,14 @@ $(function() {
 
 function setDropNav() {
   $(".icon").click(function() {
-    $(".icon").toggleClass("active");
     $("#dropbar").toggleClass("visible");
   });
 
   $("section, footer, .main").click(function() {
-    $(".icon").removeClass("active");
     $("#dropbar").removeClass("visible");
   });
 
   $(window).resize(function() {
-    $(".icon").removeClass("active");
     $("#dropbar").removeClass("visible");
   });
 }

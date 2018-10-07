@@ -10,6 +10,6 @@
   // URL Root
   define('URLROOT', 'http://localhost/crisaianvergara');
   // Site Namme
-  define('SITENAME', 'Cris Aian Vergara');
+  define('SITENAME', 'Cris Aian Vergara | Freelance Web Designer & Developer');
   // App Version
   define('APPVERSION', '2.0.0');

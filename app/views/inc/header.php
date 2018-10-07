@@ -4,36 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- SEO -->
+  <meta name="author" content="Cris Aian Vergara">
+  <meta name="description" content="Freelance Web Designer & Developer based in Daejeon, South Korea. I design and code beautifully simple things, and I love what I do.">
+  <meta property="og:image" content="<?php echo URLROOT; ?>/img/logo.png">
+  <meta property="og:description" content="Freelance Web Designer & Developer based in Daejeon, South Korea. I design and code beautifully simple things, and I love what I do.">
+  <meta property="og:title" content="Cris Aian Vergara Portfolio Website">
+  <!-- Favicon -->
+  <link rel="shorcut icon" type="image/png" href="<?php echo URLROOT; ?>/img/logo.png" />
+  <!-- CSS -->
   <link rel="stylesheet" href="<?php echo URLROOT; ?>/css/main.css">
+  <!-- Title -->
   <title><?php echo SITENAME; ?></title>
-<!-- Fontawesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="<?php echo URLROOT; ?>/js/main.js"></script>
+  <!-- Jquery -->
+  <script
+  src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- Javascript -->
 </head>
 
 <body>
-<header>
-    <nav class="container">
-      <div class="logo nav-item">
-        <a id="img-logo" href="index.html"><img src="img/logo.png" alt=""></a>
-      </div>
-      <div class="nav-item icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul id="dropbar" class="menu nav-item">
-        <li><a href="index.html">home</a></li>
-        <li><a class="smooth-scroll" id="about-me" href="#about-me-section">about</a></li>
-        <li><a href="portfolio.html">portfolio</a></li>
-        <li><a href="trade.html">trade journal</a></li>
-        <li id="last-li"><a class="smooth-scroll" id="contact-me" href="#contact-me-section">contact</a></li>
-      </ul>
-      <ul class="social-links nav-item">
-        <li><a target="_blank" href="https://www.facebook.com/VXAianOfficial"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a target="_blank" href="https://twitter.com/The21stKuruno"><i class="fab fa-twitter"></i></a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/cris-aian-vergara-4bbb06154/"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a target="_blank" href="https://github.com/The21stKuruno"><i class="fab fa-github"></i></a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Navigation bar -->
+<?php require_once APPROOT . '/views/inc/navbar.php'; ?>

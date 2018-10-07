@@ -12,11 +12,11 @@ class Pages extends Controller {
     $this->view('pages/index', $data);
   }
 
-  public function about() {
+  public function portfolio() {
     $data = [
-      'title' => 'About Us'
+      'title' => 'Portfolio'
     ];
 
-    $this->view('pages/about', $data);
+    $this->view('pages/portfolio', $data);
   }
 }

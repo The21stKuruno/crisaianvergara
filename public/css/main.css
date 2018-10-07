@@ -298,7 +298,8 @@ section.main {
     justify-items: center;
     min-height: 500px;
     padding-top: 30px;
-    padding-bottom: 30px; }
+    padding-bottom: 30px;
+    height: 100vh; }
   section.main h1 {
     color: #fff;
     font-size: 2rem;
@@ -496,6 +497,10 @@ section.contact {
     color: #e13545;
     font-size: 12px;
     text-align: center; }
+
+section.portfolio {
+  height: 1200px;
+  padding: 70px 0; }
 
 footer {
   background: #fff;

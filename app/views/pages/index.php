@@ -1,13 +1,14 @@
 <?php require APPROOT . '/views/inc/header.php'; ?>
+<!-- Main -->
 <section class="main pages" style="background-image: url(<?php echo URLROOT; ?>/img/showcase.jpg);">
     <div class="showcase container">
-      <h1>Freelance Web Designer & Developer based in Manila, Philippines. I design and code beautifully simple
+      <h1>Freelance Web Designer & Developer based in Daejeon, South Korea. I design and code beautifully simple
         things,
         and I love what I do.</h1>
-      <a class="smooth-scroll" id="work-me" href="#work-me-section">
+      <a class="smooth-scroll" id="work-me" href="">
         <p>Wanna Learn More!</p>
         <i class="fas fa-chevron-down"></i>
-    </div>
+      </a>
     </div>
   </section>
   <section id="work-me-section" class="work pages container">
@@ -120,8 +121,5 @@
       </div>
     </form>
   </section>
-  <a href="#" id="go-top">
-    <span></span>
-    <i class="fas fa-arrow-up"></i>
-  </a>
+  <script src="<?php echo URLROOT; ?>/js/main.js"></script>
 <?php require APPROOT . '/views/inc/footer.php'; ?>
