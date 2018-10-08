@@ -117,7 +117,7 @@
       </div>
       <div class="form-item">
         <label for="message">Message <sup>*</sup></label>
-        <textarea name="" id="message" cols="30" rows="10" name="message" required></textarea>
+        <textarea id="message" cols="30" rows="10" name="message" required></textarea>
       </div>
       <div class="form-item">
         <button class="btn" type="submit">Send Message</button>
