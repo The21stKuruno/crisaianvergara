@@ -168,7 +168,7 @@ body {
 a {
   color: #24292e;
   text-decoration: none;
-  transition: 0.3s; }
+  transition: 0.2s; }
 
 ul {
   list-style: none; }
@@ -192,6 +192,9 @@ span h3 {
   text-transform: uppercase;
   top: -12px;
   position: relative; }
+
+section h3 {
+  color: #475460; }
 
 header {
   background: #fff;
@@ -247,12 +250,12 @@ header {
         overflow: hidden;
         position: absolute;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.2s;
         top: 62px;
         width: 100%; } }
   header #dropbar.visible {
     height: 300px;
-    transition: 0.3s; }
+    transition: 0.2s; }
   header .social-links {
     grid-gap: 1rem;
     grid-template-columns: repeat(4, auto);
@@ -293,6 +296,15 @@ section.main {
     display: grid;
     height: 100%;
     justify-items: center; }
+  section.main .alert-success {
+    position: absolute;
+    text-align: center;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb; }
   section.main h1 {
     display: grid;
     align-self: end;
@@ -305,15 +317,17 @@ section.main {
   section.main a {
     display: grid;
     align-self: center;
-    color: #fff;
+    color: #d9dadb;
     display: block;
     font-size: 14px;
     text-align: center;
     letter-spacing: 2px;
     width: auto; }
     section.main a:hover {
-      color: #b5babf;
+      color: #fff;
       transition: 0.2s; }
+    section.main a p {
+      margin-bottom: 10px; }
 
 section.work {
   padding-top: 35px;
@@ -321,19 +335,48 @@ section.work {
   section.work .projects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-gap: 1.5rem;
+    grid-gap: 2rem;
     margin-top: 70px; }
   section.work h3 {
     max-width: 250px; }
-  section.work div a {
+  section.work figure {
+    position: relative;
     background: #fff;
     border-radius: 5px;
     box-shadow: 0 15px 45px -15px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
-    transition: 0.3s;
+    transition: 0.2s;
     padding: 2rem 1.5rem; }
-    section.work div a:hover {
+    section.work figure:hover {
       box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.4); }
+  section.work .drop-me {
+    border-radius: 5px;
+    overflow: hidden;
+    background: rgba(36, 41, 46, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    transition: 0.2s;
+    grid-gap: 1.5rem; }
+  section.work .drop-me a {
+    color: #fff;
+    background: #28a745;
+    padding: 7px 1rem;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    transition: 0.2s; }
+    section.work .drop-me a:hover {
+      background: #2cba4c; }
+  section.work .drop-me.activate {
+    width: 100%; }
   section.work img {
     border-radius: 3px;
     display: block;
@@ -385,8 +428,10 @@ section.about {
   section.about h5 {
     font-size: 1.1rem;
     font-weight: 400;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    color: #475460; }
   section.about p {
+    color: #475460;
     font-size: 1.1rem; }
   section.about #find {
     color: #2188ff;
@@ -403,11 +448,11 @@ section.about {
     height: 40px;
     margin: 0 5px;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.2s;
     width: 40px; }
     section.about li:hover {
       opacity: 0.7;
-      transition: 0.3s; }
+      transition: 0.2s; }
     section.about li i {
       color: #fff;
       font-size: 1.5rem; }
@@ -458,7 +503,8 @@ section.contact {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
   section.contact label {
     display: block;
-    margin-bottom: 7px; }
+    margin-bottom: 7px;
+    color: #475460; }
   section.contact input,
   section.contact textarea,
   section.contact button {
@@ -542,13 +588,13 @@ a#go-top {
   padding: 10px;
   position: fixed;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.2s;
   width: 43px;
   height: 43px;
   z-index: 0; }
   a#go-top:hover {
     background: #24292e;
-    transition: 0.3s; }
+    transition: 0.2s; }
   a#go-top span {
     background: #fff;
     display: block;

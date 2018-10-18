@@ -25,6 +25,7 @@ class Messages extends Controller {
 
 
       mail($mail_to, $headers, $txt);
+      flash('send_success', 'Thank you. Your message sent successfully!');
       header('Location: ' . URLROOT);
 
     } else {

@@ -1,6 +1,7 @@
 $(function() {
   setGoToTop();
   setDropNav();
+  setFigure();
 });
 
 function setDropNav() {
@@ -35,5 +36,14 @@ function setGoToTop() {
   $("#go-top").click(function() {
     $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
+  });
+}
+
+// Figure
+function setFigure() {
+  $(".view-code").hover(function() {
+    $(this)
+      .find(".drop-me")
+      .toggleClass("activate");
   });
 }
